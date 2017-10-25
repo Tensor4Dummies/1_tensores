@@ -1,8 +1,8 @@
 <h1>TENSORES</h1>
 <p>Los tensores son los datos de Tensorflow, todos tienen tres características principales. Y además los podemos dividir en tipos.</p>
 
-<ol><h2>Características</h2>
-<h3><li>Rango (Rank)</li></h3>
+<h2>Características</h2>
+<ol><h3><li>Rango (Rank)</li></h3>
 <p>Es la dimensión del tensor, a partir de ella podemos hablar de:
 <ul>
 	<li>Escalares son tensores 0 dimensionales </li>
@@ -50,9 +50,9 @@
 </table>
 </ol>
 
-<ol><h2>Tipos de tensores</h2>
+<h2>Tipos de tensores</h2>
 
-<h3><li>Constantes</li></h3>
+<ol><h3><li>Constantes</li></h3>
 <p>Se caracterizan porque nunca cambian su valor en distintas ejecuciones. Para crear una variable:</p>
 <p><i>constante1 = tf.constant(3.5, dtype=tf.float32, name="cte1")</i></p>
 <p>donde 3.5 es el valor que le queremos dar, dtype el tipo y name el nombre que queremos que tenga para la representación en el grafo.</p>
