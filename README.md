@@ -55,7 +55,7 @@
 <p>Se caracterizan porque nunca cambian su valor en distintas ejecuciones. Para crear una variable:</p>
 <p><i>constante1 = tf.constant(3.5, dtype=tf.float32, name="cte1")</i></p>
 <p>donde 3.5 es el valor que le queremos dar, dtype el tipo y name el nombre que queremos que tenga para la representación en el grafo.</p>
-<p>Tras ejecutar el archivo <a href="https://github.com/Tensor4Dummies/tensores/blob/master/constantes.py">constantes.py</a> obtenemos:</p>
+<p>Tras ejecutar el archivo <a href="https://github.com/Tensor4Dummies/1_tensores/blob/master/constantes.py">constantes.py</a> obtenemos:</p>
 <p><i>Información: Tensor("cte1:0", shape=(), dtype=float32), valor 3.5</br>
 Información: Tensor("cte2:0", shape=(), dtype=float32), valor 5.5</br>
 Suma 0 de constantes: 3.5+5.5=9.0</br>
@@ -74,7 +74,7 @@ Suma 9 de constantes: 3.5+5.5=9.0</i></p>
 <p>Se caracterizan porque se les asigna un valor en cada ejecución. Para crear un placeholder:</p>
 <p><i>ph1 = tf.placeholder(tf.float32, shape=(None), name="ph1")</i></p>
 <p>donde tf.float32 es el tipo, shape el tamaño que queremos que tenga y name el nombre que queremos que tenga para la representación en el grafo.</p>
-<p>Tras ejecutar el archivo <a href="https://github.com/Tensor4Dummies/tensores/blob/master/placeholder.py">placeholder.py</a> obtenemos:</p>
+<p>Tras ejecutar el archivo <a href="https://github.com/Tensor4Dummies/1_tensores/blob/master/placeholder.py">placeholder.py</a> obtenemos:</p>
 <p><i>Suma de placeholders: 3.5+5.5=9.0
 Suma 0 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]</br>
 Suma 1 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]</br>
@@ -92,7 +92,7 @@ Suma 9 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]</i></p>
 <p>Se caracterizan porque se les reasigna un valor en cada ejecución. Para crear un placeholder:</p>
 <p><i>v1 = tf.Variable([3.5], dtype=tf.float32, name="v1")</i></p>
 <p>donde 3.5 es el valor que le queremos dar, dtype el tipo y name el nombre que queremos que tenga para la representación en el grafo.<p>
-<p>Tras ejecutar el archivo <a href="https://github.com/Tensor4Dummies/tensores/blob/master/variables.py">variables.py</a> obtenemos:</p>
+<p>Tras ejecutar el archivo <a href="https://github.com/Tensor4Dummies/1_tensores/blob/master/variables.py">variables.py</a> obtenemos:</p>
 <p><i>Información: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.5]</br>
 Información 0: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.]</br>
 Información 1: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.5]</br>
