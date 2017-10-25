@@ -1,16 +1,16 @@
 #IMPORTACIÓN DE LIBRERIAS
-import tensorflow as tf 
+import tensorflow as tf
 import os
 
 #QUITAR LOS MENSAJES DE AVISO
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 #CREAR EL MODELO
-#Variables se computan constantemente 
+#Variables se computan constantemente
 v1 = tf.Variable([3.5], dtype=tf.float32, name="v1")
 #Operaciones
 #Restar v1-0.5 en cada ejecución
-resta = tf.train.GradientDescentOptimizer(0.5).minimize(v1)
+resta = v1.assign(v1-0.5)
 
 #INICIAR SESIÓN
 with tf.Session() as sesion:
