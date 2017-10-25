@@ -57,18 +57,18 @@ Para crear una variable:
 donde *3.5* es el valor que le queremos dar, *dtype* el tipo y *name* el nombre que queremos que tenga para la representación en el grafo.
 Tras ejecutar el archivo constantes.py obtenemos:
 
-*Información: Tensor("cte1:0", shape=(), dtype=float32), valor 3.5*
-*Información: Tensor("cte2:0", shape=(), dtype=float32), valor 5.5*
-*Suma 0 de constantes: 3.5+5.5=9.0*
-*Suma 1 de constantes: 3.5+5.5=9.0*
-*Suma 2 de constantes: 3.5+5.5=9.0*
-*Suma 3 de constantes: 3.5+5.5=9.0*
-*Suma 4 de constantes: 3.5+5.5=9.0*
-*Suma 5 de constantes: 3.5+5.5=9.0*
-*Suma 6 de constantes: 3.5+5.5=9.0*
-*Suma 7 de constantes: 3.5+5.5=9.0*
-*Suma 8 de constantes: 3.5+5.5=9.0*
-*Suma 9 de constantes: 3.5+5.5=9.0*
+*Información: Tensor("cte1:0", shape=(), dtype=float32), valor 3.5*</br>
+*Información: Tensor("cte2:0", shape=(), dtype=float32), valor 5.5*</br>
+*Suma 0 de constantes: 3.5+5.5=9.0*</br>
+*Suma 1 de constantes: 3.5+5.5=9.0*</br>
+*Suma 2 de constantes: 3.5+5.5=9.0*</br>
+*Suma 3 de constantes: 3.5+5.5=9.0*</br>
+*Suma 4 de constantes: 3.5+5.5=9.0*</br>
+*Suma 5 de constantes: 3.5+5.5=9.0*</br>
+*Suma 6 de constantes: 3.5+5.5=9.0*</br>
+*Suma 7 de constantes: 3.5+5.5=9.0*</br>
+*Suma 8 de constantes: 3.5+5.5=9.0*</br>
+*Suma 9 de constantes: 3.5+5.5=9.0*</br>
 
 Por lo que vemos que por muchas veces que ejecutemos una constante, su valor no cambia ni se tiene que asignar.
 
@@ -80,16 +80,16 @@ donde *tf.float32* es el tipo, *shape* el tamaño que queremos que tenga y *name
 Tras ejecutar el archivo placeholder.py obtenemos:
 
 *Suma de placeholders: 3.5+5.5=9.0
-*Suma 0 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*
-*Suma 1 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*
-*Suma 2 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*
-*Suma 3 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*
-*Suma 4 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*
-*Suma 5 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*
-*Suma 6 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*
-*Suma 7 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*
-*Suma 8 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*
-*Suma 9 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*
+*Suma 0 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*</br>
+*Suma 1 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*</br>
+*Suma 2 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*</br>
+*Suma 3 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*</br>
+*Suma 4 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*</br>
+*Suma 5 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*</br>
+*Suma 6 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*</br>
+*Suma 7 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*</br>
+*Suma 8 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*</br>
+*Suma 9 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]*</br>
 
 Podemos ver que los datos no varían ya que estamos introduciendo en todas las ejecuciones los mismos datos.
 
@@ -100,16 +100,16 @@ Para crear un placeholder:
 donde *3.5* es el valor que le queremos dar, *dtype* el tipo y *name* el nombre que queremos que tenga para la representación en el grafo.
 Tras ejecutar el archivo variables.py obtenemos:
 
-*Información: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.5]*
-*Información 0: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.]*
-*Información 1: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.5]*
-*Información 2: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.]*
-*Información 3: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 1.5]*
-*Información 4: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 1.]*
-*Información 5: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 0.5]*
-*Información 6: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 0.]*
-*Información 7: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-0.5]*
-*Información 8: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-1.]*
-*Información 9: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-1.5]*
+*Información: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.5]*</br>
+*Información 0: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.]*</br>
+*Información 1: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.5]*</br>
+*Información 2: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.]*</br>
+*Información 3: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 1.5]*</br>
+*Información 4: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 1.]*</br>
+*Información 5: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 0.5]*</br>
+*Información 6: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 0.]*</br>
+*Información 7: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-0.5]*</br>
+*Información 8: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-1.]*</br>
+*Información 9: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-1.5]*</br>
 
 En este caso vemos que su valor disminuye 0.5 en cada ejecución, ya que estamos utilizando el descenso de gradiente para esa variable.
