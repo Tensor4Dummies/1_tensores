@@ -1,9 +1,9 @@
 <h1>TENSORES</h1>
-<p>Los tensores son los datos de Tensorflow, todos tienen tres caracter韘ticas principales. Y adem醩 los podemos dividir en tipos.</p>
+<p>Los tensores son los datos de Tensorflow, todos tienen tres <a href="#caracteristicas">caracter铆sticas</a> principales. Y adem谩s los podemos dividir en <a href="#tipos">tipos</a>.</p>
 
-<h2>Caracter韘ticas</h2>
+<h2><a name="caracteristicas"></a>Caracter铆sticas</h2>
 <h3>Rango (Rank)</h3> 
-<p>Es la dimensi髇 del tensor, a partir de ella podemos hablar de:
+<p>Es la dimensi贸n del tensor, a partir de ella podemos hablar de:
 <ul>
 	<li>Escalares son tensores 0 dimensionales </li>
 	<li>Vectores o listas [] son tensores 1 dimensionales </li>
@@ -11,11 +11,11 @@
 	<li>Matrices n dimensionales son tensores n dimensionales</li>
 </ul></p>
 <h3>Forma (shape)</h3> 
-<p>Es el n鷐ero de elementos en cada dimensi髇</p>
+<p>Es el n煤mero de elementos en cada dimensi贸n</p>
 <h3>Tipo de datos (Data type) </h3>
 <p>Es el tipo de datos de cada elemento del tensor</p>
 <h3>Ejemplo</h3>
-<p>En la siguiente tabla se pueden ver como var韆n las caracter韘ticas seg鷑 el rango</p>
+<p>En la siguiente tabla se pueden ver como var铆an las caracter铆sticas seg煤n el rango</p>
 <table>
 	<tr>
 		<th>Tensor</th>
@@ -48,16 +48,16 @@
 		<td>Int</td>
 	</tr>
 </table>
-
-<h2>Tipos de tensores</h2>
+<hr>
+<h2><a name="tipos"></a>Tipos de tensores</h2>
 
 <h3>Constantes </h3>
 <p>Se caracterizan porque nunca cambian su valor en distintas ejecuciones. Para crear una variable:</p>
 <p><i>constante1 = tf.constant(3.5, dtype=tf.float32, name="cte1")</i></p>
-<p>donde 3.5 es el valor que le queremos dar, dtype el tipo y name el nombre que queremos que tenga para la representaci髇 en el grafo.</p>
-<p>Tras ejecutar el archivo constantes.py obtenemos:</p>
-<p><i>Informaci髇: Tensor("cte1:0", shape=(), dtype=float32), valor 3.5</br>
-Informaci髇: Tensor("cte2:0", shape=(), dtype=float32), valor 5.5</br>
+<p>donde 3.5 es el valor que le queremos dar, dtype el tipo y name el nombre que queremos que tenga para la representaci贸n en el grafo.</p>
+<p>Tras ejecutar el archivo <a href="https://github.com/Tensor4Dummies/tensores/blob/master/constantes.py">constantes.py</a> obtenemos:</p>
+<p><i>Informaci贸n: Tensor("cte1:0", shape=(), dtype=float32), valor 3.5</br>
+Informaci贸n: Tensor("cte2:0", shape=(), dtype=float32), valor 5.5</br>
 Suma 0 de constantes: 3.5+5.5=9.0</br>
 Suma 1 de constantes: 3.5+5.5=9.0</br>
 Suma 2 de constantes: 3.5+5.5=9.0</br>
@@ -71,10 +71,10 @@ Suma 9 de constantes: 3.5+5.5=9.0</i></p>
 <p>Por lo que vemos que por muchas veces que ejecutemos una constante, su valor no cambia ni se tiene que asignar.</p>
 
 <h3>Placeholders</h3>
-<p>Se caracterizan porque se les asigna un valor en cada ejecuci髇. Para crear un placeholder:</p>
+<p>Se caracterizan porque se les asigna un valor en cada ejecuci贸n. Para crear un placeholder:</p>
 <p><i>ph1 = tf.placeholder(tf.float32, shape=(None), name="ph1")</i></p>
-<p>donde tf.float32 es el tipo, shape el tama駉 que queremos que tenga y name el nombre que queremos que tenga para la representaci髇 en el grafo.</p>
-<p>Tras ejecutar el archivo placeholder.py obtenemos:</p>
+<p>donde tf.float32 es el tipo, shape el tama帽o que queremos que tenga y name el nombre que queremos que tenga para la representaci贸n en el grafo.</p>
+<p>Tras ejecutar el archivo <a href="https://github.com/Tensor4Dummies/tensores/blob/master/placeholder.py">placeholder.py</a> obtenemos:</p>
 <p><i>Suma de placeholders: 3.5+5.5=9.0
 Suma 0 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]</br>
 Suma 1 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]</br>
@@ -86,22 +86,22 @@ Suma 6 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]</br>
 Suma 7 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]</br>
 Suma 8 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]</br>
 Suma 9 de placeholders: [1, 2, 10]+[4, 2, 10]=[  5.   4.  20.]</i></p>
-<p>Podemos ver que los datos no var韆n ya que estamos introduciendo en todas las ejecuciones los mismos datos.</p>
+<p>Podemos ver que los datos no var铆an ya que estamos introduciendo en todas las ejecuciones los mismos datos.</p>
 
 <h3>Variables</h3>
-<p>Se caracterizan porque se les reasigna un valor en cada ejecuci髇. Para crear un placeholder:</p>
+<p>Se caracterizan porque se les reasigna un valor en cada ejecuci贸n. Para crear un placeholder:</p>
 <p><i>v1 = tf.Variable([3.5], dtype=tf.float32, name="v1")</i></p>
-<p>donde 3.5 es el valor que le queremos dar, dtype el tipo y name el nombre que queremos que tenga para la representaci髇 en el grafo.<p>
-<p>Tras ejecutar el archivo variables.py obtenemos:</p>
-<p><i>Informaci髇: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.5]</br>
-Informaci髇 0: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.]</br>
-Informaci髇 1: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.5]</br>
-Informaci髇 2: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.]</br>
-Informaci髇 3: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 1.5]</br>
-Informaci髇 4: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 1.]</br>
-Informaci髇 5: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 0.5]</br>
-Informaci髇 6: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 0.]</br>
-Informaci髇 7: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-0.5]</br>
-Informaci髇 8: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-1.]</br>
-Informaci髇 9: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-1.5]</i></p>
-<p>En este caso vemos que su valor disminuye 0.5 en cada ejecuci髇, ya que estamos utilizando el descenso de gradiente para esa variable.</p>
+<p>donde 3.5 es el valor que le queremos dar, dtype el tipo y name el nombre que queremos que tenga para la representaci贸n en el grafo.<p>
+<p>Tras ejecutar el archivo <a href="https://github.com/Tensor4Dummies/tensores/blob/master/variables.py">variables.py</a> obtenemos:</p>
+<p><i>Informaci贸n: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.5]</br>
+Informaci贸n 0: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.]</br>
+Informaci贸n 1: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.5]</br>
+Informaci贸n 2: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.]</br>
+Informaci贸n 3: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 1.5]</br>
+Informaci贸n 4: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 1.]</br>
+Informaci贸n 5: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 0.5]</br>
+Informaci贸n 6: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 0.]</br>
+Informaci贸n 7: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-0.5]</br>
+Informaci贸n 8: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-1.]</br>
+Informaci贸n 9: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-1.5]</i></p>
+<p>En este caso vemos que su valor disminuye 0.5 en cada ejecuci贸n, ya que estamos utilizando el descenso de gradiente para esa variable.</p>
