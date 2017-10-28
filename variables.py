@@ -8,8 +8,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 #CREAR EL MODELO
 #Variables se computan constantemente
 v1 = tf.Variable([3.5], dtype=tf.float32, name="v1")
-#Operaciones
-#Restar v1-0.5 en cada ejecución
+#Operaciones: Restar v1-0.5 en cada ejecución
 resta = v1.assign(v1-0.5)
 
 #INICIAR SESIÓN
@@ -25,5 +24,4 @@ with tf.Session() as sesion:
     #Ejecución operaciones
     for i in range(10):
         sesion.run(resta)
-        #Información de las constantes actualizada
         print("Información {}: {}, valor {}".format(i, v1, sesion.run(v1)))
