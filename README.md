@@ -13,10 +13,10 @@
 <h3><li>Forma (shape)</li></h3>
 <p>Es el número de elementos en cada dimensión</p>
 <h3><li>Tipo de datos (Data type) </li></h3>
-<p>Es el tipo de datos de cada elemento del tensor</p>
+<p>Es el tipo de datos de cada elemento del tensor</p></ol>
 <h3>Ejemplo</h3>
-<p>En la siguiente tabla se pueden ver como varían las características según el rango</p>
-<img src="https://github.com/Tensor4Dummies/1_tensores/blob/master/caracteristicas.JPG">
+<p>En la siguiente tabla se pueden ver como varían las características</p>
+<img src="https://github.com/Tensor4Dummies/1_tensores/blob/master/características.JPG">
 
 <ol><h2>Tipos de tensores</h2>
 
