@@ -63,17 +63,17 @@ Podemos ver que los datos no varían ya que estamos introduciendo en todas las e
 <pre style='display:inline'><i>v1 = tf.Variable([3.5], dtype=tf.float32, name="v1")</i></pre>
 donde 3.5 es el valor que le queremos dar, dtype el tipo y name el nombre que queremos que tenga para la representación en el grafo.<p>
 <p>Tras ejecutar el archivo <a href="https://github.com/Tensor4Dummies/1_tensores/blob/master/variables.py">variables.py</a> obtenemos:</br>
-<pre style='display:inline'><i>Información: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.5]</br>
-Información 0: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 3.]</br>
-Información 1: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.5]</br>
-Información 2: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 2.]</br>
-Información 3: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 1.5]</br>
-Información 4: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 1.]</br>
-Información 5: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 0.5]</br>
-Información 6: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [ 0.]</br>
-Información 7: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-0.5]</br>
-Información 8: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-1.]</br>
-Información 9: <tf.Variable 'v1:0' shape=(1,) dtype=float32_ref>, valor [-1.5]</i></pre>
+<pre style='display:inline'><i>Información: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [ 3.5]</br>
+Información 0: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [ 3.]</br>
+Información 1: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [ 2.5]</br>
+Información 2: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [ 2.]</br>
+Información 3: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [ 1.5]</br>
+Información 4: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [ 1.]</br>
+Información 5: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [ 0.5]</br>
+Información 6: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [ 0.]</br>
+Información 7: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [-0.5]</br>
+Información 8: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [-1.]</br>
+Información 9: &lt;tf.Variable 'v1:0' shape=(1,) dtype=float32_ref&gt;, valor [-1.5]</i></pre>
 En este caso vemos que su valor disminuye 0.5 en cada ejecución, ya que estamos utilizando una asignación de la variable.</p>
 </ol>
 <img src="https://github.com/Tensor4Dummies/1_tensores/blob/master/tipos.JPG">
